@@ -18,12 +18,10 @@ meu_carro = Carro(modelo='Fusca', cor='Azul', ano=1970)
 # 2) Crie uma classe chamada Restaurante com os atributos nome, categoria, ativo e crie mais 2 atributos. Instancie um restaurante e atribua valores aos seus atributos.
 
 class Restaurante:
-    def __init__(self, nome, categoria, ativo=False, nota_avaliacao):
+    def __init__(self, nome, categoria, ativo=False):
         self.nome = nome
         self.categoria = categoria
         self.ativo = ativo
-        self.capacidadee = capacidadee
-        self.nota_avaliacao = nota_avaliacao
 
 # Instanciando um restaurante e atribuindo valores aos seus atributos
 restaurante_exemplo = Restaurante(nome='Comida Boa', categoria='Gourmet', ativo=True, capacidade=50, nota_avaliacao=4.5)
@@ -31,12 +29,11 @@ restaurante_exemplo = Restaurante(nome='Comida Boa', categoria='Gourmet', ativo=
 # 3) Modifique a classe Restaurante adicionando um construtor que aceita nome e categoria como parâmetros e inicia ativo como False por padrão. Crie uma instância utilizando o construtor.
 
 class Restaurante:
-    def __init__(self, nome, categoria, ativo=False, capacidaade, nota_avaliacao):
+    def __init__(self, nome, categoria, ativo=False, ):
         self.nome = nome
         self.categoria = categoria
         self.ativo = ativo
-        self.capacidaade = capacidaade
-        self.nota_avaliacao = nota_avaliacao
+
 
 # Instanciando um restaurante utilizando o construtor
 novo_restaurante = Restaurante(nome='Santa Marmita', categoria='Fast Food')
@@ -44,12 +41,10 @@ novo_restaurante = Restaurante(nome='Santa Marmita', categoria='Fast Food')
 # 4) Adicione um método especial `__str__` à classe Restaurante para que, ao imprimir uma instância, seja exibida uma mensagem formatada com o nome e a categoria. Exiba essa mensagem para uma instância de restaurante.
 
 class Restaurante:
-    def __init__(self, nome, categoria, ativo=False, capaciidade, nota_avaliacao):
+    def __init__(self, nome, categoria, ativo=False):
         self.nome = nome
         self.categoria = categoria
         self.ativo = ativo
-        self.capaciidade = capaciidade
-        self.nota_avaliacao = nota_avaliacao
 
     def __str__(self):
         return f'{self.nome} | {self.categoria}'
